@@ -1,0 +1,83 @@
+{
+
+    "schools": [
+
+        {
+            "name" : "Harvard University",
+            "shortenedName" : "Harvard",
+            "yearsAttended" : "2021 - 2025",
+            "imgFileName" : "harvard.png",
+            "imgSize" : "110px",
+            "location" : "Cambridge, MA",
+            "descriptor1" : "Bachelors of Arts in Computer Science and Economics",
+            "descriptor2" : "Organizations: Harvard Consulting for Business and the Environment (Analyst), HackHarvard (Technology Board Member)"
+        },
+
+        {
+            "name" : "Fairview High School",
+            "shortenedName" : "Fairview",
+            "yearsAttended" : "2017 - 2021",
+            "imgFileName" : "fairview.png",
+            "imgSize" : "110px",
+            "location" : "Boulder, CO",
+            "descriptor1" : "International Baccalaureate Program",
+            "descriptor2" : "Regeneron Science Talent Search Scholar, Regeneron ISEF Finalist, National Merit Finalist"
+
+        },
+
+        {
+            "name" : "University of Colorado Boulder",
+            "shortenedName" : "CU Boulder",
+            "yearsAttended" : "2019 - 2020",
+            "imgFileName" : "cu.png",
+            "imgSize" : "100px",
+            "location" : "Boulder, CO",
+            "descriptor1" : "Dual Enrollment Student | Joseph E. Sewall Scholar",
+            "descriptor2" : "Relevant Coursework: Calculus 2 (MATH 2300) and Calculus 3 (MATH 2400)"
+
+        }
+
+    ],
+
+    "projects" : [
+
+        {
+            "title": "Recurrent Machine Learning for Maternal Fetal Heart Rate Monitoring",
+            "dates" : "2021 - 2022",
+            "imgFileName": "bch-mfm.jpeg",
+            "verticalOffset": "30px"
+        },
+
+        {
+
+            "title" : "Convolutional Encoder-Decoder Networks for Radiographic CT Reconstructions",
+            "dates" : "2020 - 2021",
+            "imgFileName" : "sxr2.png",
+            "verticalOffset" : "30px"
+        },
+
+        {
+            "title" : "COVID-19 Graphical Diagnostics and Prediction Toolkit",
+            "dates" : "2020",
+            "imgFileName" : "ncov.jpg",
+            "verticalOffset": "30px"
+
+        },
+
+        {
+            "title" : "Novel Navigational and Visual Guidance System for Aircraft Operations in Low Visibility Conditions",
+            "dates" : "2019 - 2020",
+            "imgFileName"  :"svs.jpg",
+            "verticalOffset" : "20px"
+        },
+
+        {
+            "title" : "Live-Time Diagnostics Toolkit for Bus Bunching in Denver RTD Buses",
+            "dates" : "2019 - 2021",
+            "imgFileName" : "rtd.jpg",
+            "verticalOffset" : "30px"
+
+        }
+    ]
+
+}
