@@ -58,8 +58,7 @@ function isConflict(meeting_days1, meeting_days2, time1, time2) {
 
 const Term = ( {term, data, query, conflictsQuery, names, hashmap } ) => {
     const PAGELIMIT = 40;
-    const CHARLIMIT = 80;
-    const OPACITYLIMIT = 91;
+    const OPACITYLIMIT = 30;
 
     const conflictsList = conflictsQuery.split(',').map(item => item.trim())
 
@@ -84,7 +83,7 @@ const Term = ( {term, data, query, conflictsQuery, names, hashmap } ) => {
             .map((item, index) => {
                 return (
                     <div key = {index}> 
-                        <Course N = {data.length} name = {item.name} rank_percentile = {item.rank_percentile} sentiment_percentile = {item.sentiment_percentile} rank = {item.rank} course_name = {item.course_name} OPACITYLIMIT = {OPACITYLIMIT} />
+                        <Course index = {index} N = {data.length} name = {item.name} rank_percentile = {item.rank_percentile} sentiment_percentile = {item.sentiment_percentile} rank = {item.rank} course_name = {item.course_name} OPACITYLIMIT = {OPACITYLIMIT} />
                     </div>
                 )
             })

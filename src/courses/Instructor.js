@@ -7,14 +7,16 @@ const Instructor = ( {N, rank, instructor, current_classes, rating, OPACITYLIMIT
 
     return (
         <a style = {{opacity: opacity}} className = 'hoverLink' onClick={() => setClicked(!clicked)}>
-             <p>{instructor}</p>
+            <div>
+             <p><b>{instructor}</b></p>
             {clicked && (
                 <div>
-                    <p><b>Rank: </b>{(rank + 1) + "/" + N}</p>
-                    <p><b>Rating: </b>{rating}</p>
+                    <h5><b>Rank: </b>{(rank + 1) + "/" + N}</h5>
+                    <h5><b>Rating: </b>{rating}</h5>
                     {/* <p><b>Current classes: </b>{current_classes.length}</p> */}
                 </div>
             )}
+            </div>
         </a>
     )
 }

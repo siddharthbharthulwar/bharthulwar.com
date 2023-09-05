@@ -10,7 +10,7 @@ const Footer = () => {
             </div>
         </div>
         <div style={{float: "right"}}>
-            <div className = "nameBoxDivSmall"></div>
+            <div>Sid Bharthulwar</div>
             {/* <img src="https://hitwebcounter.com/counter/counter.php?page=7811144&style=0007&nbdigits=5&type=ip&initCount=0" id = "counter" border="0" /> */}
         </div>
     </div>

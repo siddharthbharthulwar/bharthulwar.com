@@ -1,11 +1,15 @@
 
 
 p {
-    font-size: small;
+    font-size: 15px;
+    font-weight: lighter;
 }
 
 h5 {
-    font-size: x-small;
+    font-size: 12px;
+    font-weight: light;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
 a {
@@ -67,7 +71,7 @@ ul {
 
 .footerLink :hover {
     text-decoration: none;
-    background-color: red;
+    background-color: grey;
     color: white;
 }
 
@@ -78,7 +82,7 @@ ul {
 
 .hoverLink :hover {
     text-decoration: none;
-    background-color: red;
+    background-color: grey;
     color: white;
 }
 
@@ -94,7 +98,7 @@ ul {
 
 .routerLink :hover {
     text-decoration: none;
-    background-color: red;
+    background-color: grey;
     color: white;
     margin-bottom: 31px;  
 }

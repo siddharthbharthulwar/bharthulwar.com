@@ -5,11 +5,12 @@ import './index.css';
 
 const About = () => {
 
-    return (
-        <div>
 
-            <div class = "nameBoxDiv" >
-          </div>
+    return (
+        <div style = {{maxWidth: "520px"}}>
+            <h1>Sid Bharthulwar</h1>
+            {/* <div class = "nameBoxDiv" >
+            </div> */}
           <Time></Time>
 
 
@@ -19,8 +20,9 @@ const About = () => {
             
              */}
 
-            <p>I study computer science and math at Harvard. In the past, I've worked on macroeconomics research at <HoverLink text = "Bridgewater" href = "http://bridgewater.com"></HoverLink>, software engineering at <HoverLink text = "Two Sigma" href = "http://twosigma.com"></HoverLink> and an <HoverLink text = "early-stage AI startup" href = "http://unsupervised.com"></HoverLink>, and research at Harvard, MIT CSAIL, and Penn. 
+            <p>I study computer science and math at Harvard. In the past, I've worked on macroeconomics research at <HoverLink text = "Bridgewater" href = "http://bridgewater.com"></HoverLink>, software engineering at <HoverLink text = "Two Sigma" href = "http://twosigma.com"></HoverLink> and an <HoverLink text = "early-stage AI startup" href = "http://unsupervised.com"></HoverLink>, and research at Harvard, MIT CSAIL, and Penn. </p>
             
+            <p>
             Feel free to <HoverLink routing = "/contact" text = "reach out"/> - my DMs are always open. And if you're a Harvard undergrad, check out my <HoverLink text = "statistical approach to course selection" routing = "/classes" />. </p>
             
             <img src="https://hitwebcounter.com/counter/counter.php?page=7811144&style=0007&nbdigits=5&type=ip&initCount=0" id = "counter" border="0" />

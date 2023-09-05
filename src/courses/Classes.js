@@ -9,7 +9,7 @@ import instructorsData from './instructor_rankings.json'
 import '../index.css'
 import Instructors from './Instructors'
 
-const Classes = () => {
+const Classes = ( {darkMode} ) => {
 
   const [q, setQ] = useState("");
   const [conflicts, setConflicts] = useState("");
@@ -32,11 +32,11 @@ const Classes = () => {
 
     <div>
         <div className = "selectorBox">
-          <Selector index = {0} currentPage = {currentPage} text = "Fall 2023 Classes" onClick={setCurrentPage} />
+          <Selector darkMode = {darkMode} index = {0} currentPage = {currentPage} text = "Fall 2023 Classes" onClick={setCurrentPage} />
           <div style = {{width: "5px"}}></div>
-          <Selector index = {1} currentPage = {currentPage} text = "Spring 2024 Classes" onClick={setCurrentPage} />
+          <Selector darkMode = {darkMode} index = {1} currentPage = {currentPage} text = "Spring 2024 Classes" onClick={setCurrentPage} />
           <div style = {{width: "5px"}}></div>
-          <Selector index = {2} currentPage = {currentPage} text = "2023/2024 Instructors" onClick = {setCurrentPage} />
+          <Selector darkMode = {darkMode} index = {2} currentPage = {currentPage} text = "2023/2024 Instructors" onClick = {setCurrentPage} />
         </div>
 
         <div style={{ marginTop: '5px' }}></div> {/* Vertical space */}
@@ -66,7 +66,7 @@ const Classes = () => {
 
         {!(currentPage == 2) && 
         <div>
-          <p>Filter out conflicts with classes you're already taking: MATH 122, COMPSCI 229r,...</p>
+          <p>Filter out conflicts with classes you're already taking, like: MATH 122, STAT 171,...</p>
           <input
             type = "search"
             style = {{
@@ -86,7 +86,6 @@ const Classes = () => {
             id = "search-form"
             value = {conflicts}
             onChange = {(e) => setConflicts(e.target.value)}
-            autoFocus
           /> 
         </div>
         }
