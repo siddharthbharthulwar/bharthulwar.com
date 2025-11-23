@@ -1,48 +1,29 @@
 import React from 'react'
-import About from './About'
-import Home from './Home'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter, Route } from 'react-router-dom'
 import { Switch } from 'react-router'
-import { Route } from 'react-router-dom'
-import './index.css'
-import Writing from './Writing'
-import Classes from './courses/Classes'
-import Contact from './Contact'
+import { Link } from 'react-router-dom'
 
-function App () {
-
-  const hrs = new Date().getHours();
-  var darkMode = hrs < 7 || hrs >= 19;
-  darkMode = false;
-  
-  darkMode ? document.body.style = 'background: #212121;' : document.body.style = 'background: #f5f5f5;';
-
+const App = () => {
   return (
-    <div style = {{color: darkMode ? "white" : "black", margin: "auto", textAlign: "left", maxWidth: "550px", marginTop: "15%", fontFamily: "Noto Sans"}}>
-      {/* <Helmet>
-            <meta name="theme-color" content={document.body.style} />
-            <meta name="msapplication-navbutton-color" content={document.body.style} />
-            <meta name="apple-mobile-web-app-status-bar-style" content={document.body.style}></meta>
-      </Helmet> */}
-      <BrowserRouter>
+    <div>
+      <HashRouter>
         <div>
-
-          <Switch>
-            <Route exact path="/">
-              <About />
-            </Route>
-            <Route path = "/classes">
-              <Classes darkMode = {darkMode} />
-            </Route>
-            <Route path = "/writing">
-              <Writing />
-            </Route>
-            <Route path = "/contact">
-              <Contact />
-            </Route>
-          </Switch>
+          <Link to = "/">Sid Bharthulwar</Link>
+          <Link to = "/classes">Harvard Q Index</Link>
         </div>
-      </BrowserRouter>
+        <Switch>
+          <Route exact path = "/">
+            <div>
+              about
+            </div>
+          </Route>
+          <Route exact path = "/classes">
+            <div>
+              classes
+            </div>
+          </Route>
+        </Switch>
+      </HashRouter>
     </div>
   )
 }

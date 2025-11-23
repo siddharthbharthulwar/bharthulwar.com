@@ -2,28 +2,32 @@ import React from 'react'
 import Time from './Time';
 import HoverLink from './HoverLink';
 import './index.css';
+import { isChrome } from 'react-device-detect';
 
 const About = () => {
 
 
     return (
-        <div style = {{maxWidth: "520px"}}>
-            <h1>Sid Bharthulwar</h1>
-            {/* <div class = "nameBoxDiv" >
-            </div> */}
+        <div style = {{maxWidth: "75%"}}>
+            {isChrome ? (
+            <div class = "nameBoxDivChrome">
+                Sid Bharthulwar
+            </div>
+            ) : (
+                <div class = "nameBoxDiv">
+                </div>
+            )}
+
           <Time></Time>
 
-
-            {/* <p>I study math and computer science at Harvard. In the past, I worked at <HoverLink text = "Bridgewater Associates" href = "http://bridgewater.com"></HoverLink> and <HoverLink text = "Two Sigma" href = "http://twosigma.com" />, and conducted research at <HoverLink text = "MIT CSAIL" href = "http://nms.csail/mit/edu/" /> and <HoverLink text = "Harvard Medical School" href = "https://cavalab.org/" />. </p>
-                
-            <p>In high school, I published <HoverLink text = "award-winning" href = "https://www.societyforscience.org/regeneron-sts/2021-scholars/"></HoverLink> <HoverLink text = "machine learning research" href = "https://www.medrxiv.org/content/10.1101/2022.05.17.22275229v1.full-text"></HoverLink> and was an early engineer at an <HoverLink text = "AI startup" href = "https://www.unsupervised.com" />. 
+            <p>I'm currently a quantitative researcher at <HoverLink text = "Jump Trading" href = "http://jumptrading.com"></HoverLink> working on AI.</p>
             
-             */}
-
-            <p>I study computer science and math at Harvard. In the past, I've worked on macroeconomics research at <HoverLink text = "Bridgewater" href = "http://bridgewater.com"></HoverLink>, software engineering at <HoverLink text = "Two Sigma" href = "http://twosigma.com"></HoverLink> and an <HoverLink text = "early-stage AI startup" href = "http://unsupervised.com"></HoverLink>, and research at Harvard, MIT CSAIL, and Penn. </p>
+            <p>I studied math and computer science at Harvard, where I conducted research on reinforcement learning and diffusion models. My research was presented at NeurIPS, ICML, ICLR, and RLC.</p>
+            
+            <p>I've also interned at <HoverLink text = "Two Sigma" href = "http://twosigma.com"></HoverLink> and <HoverLink text = "Bridgewater Associates" href = "http://bridgewater.com"></HoverLink>.</p>
             
             <p>
-            Feel free to <HoverLink routing = "/contact" text = "reach out"/> - my DMs are always open. And if you're a Harvard undergrad, check out my <HoverLink text = "statistical approach to course selection" routing = "/classes" />. </p>
+            Feel free to <HoverLink routing = "/contact" text = "reach out"/> - my DMs are open. </p>
             
             <img src="https://hitwebcounter.com/counter/counter.php?page=7811144&style=0007&nbdigits=5&type=ip&initCount=0" id = "counter" border="0" />
 

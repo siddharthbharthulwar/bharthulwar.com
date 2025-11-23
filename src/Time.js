@@ -8,7 +8,7 @@ class Time extends Component {
   render(){
     const d = new Date(this.state.time);
     return(
-      <h5>{ d.toLocaleTimeString("en-NZ", {timeZone: "America/New_York"})} | Cambridge, MA</h5>
+      <h5>{ d.toLocaleTimeString("en-NZ", {timeZone: "America/New_York"})} | New York, NY</h5>
     );
   }
   componentDidMount() {

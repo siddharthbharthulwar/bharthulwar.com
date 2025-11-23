@@ -1,19 +1,26 @@
-
+body {
+    font-family: Noto Sans, ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+}
 
 p {
-    font-size: 15px;
-    font-weight: lighter;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: .01rem;
 }
 
 h5 {
     font-size: 12px;
-    font-weight: light;
+    font-weight: 400;
     margin-top: 1px;
     margin-bottom: 1px;
 }
 
 a {
     color: inherit;
+}
+
+h1 {
+    font-weight: 500;
 }
 
 
@@ -23,13 +30,17 @@ ul {
     margin: auto;
 }
 
+b {
+    font-weight: 500;
+}
+
 .nameBoxDiv {
     background-image: url("res/nametag.png");
     filter: "sepia";
     background-size: 100% 100%;
     width: 200px;
     height: 40px;
-    margin: 0 auto;
+    margin-bottom: 15px;
 }
 
 .nameBoxDivSmall {
@@ -39,6 +50,19 @@ ul {
     width: 80px;
     height: 16px;
     margin: 0 auto;
+}
+
+.nameBoxDivChrome {
+    background: black;
+    color: white;
+    font-family: "Futura", "Nunito Sans";
+    font-weight: bold;
+    font-size: 1.6rem;
+    font-style: italic;
+    text-align: center;
+    width: 200px;
+    height: 37px;
+    margin-bottom: 15px;
 }
 
 
@@ -71,8 +95,19 @@ ul {
 
 .footerLink :hover {
     text-decoration: none;
-    background-color: grey;
-    color: white;
+    background-color: #d6d6d6;
+    color: inherit;
+}
+
+.hoverLink2 :link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hoverLink2 :hover {
+    text-decoration: none;
+    background-color: #4e4e4e;
+    color: inherit;
 }
 
 .hoverLink :link {
@@ -82,8 +117,8 @@ ul {
 
 .hoverLink :hover {
     text-decoration: none;
-    background-color: grey;
-    color: white;
+    background-color: #d7d7d7;
+    color: inherit;
 }
 
 .routerDiv {
@@ -112,4 +147,20 @@ ul {
 
     flex: 1;
     text-align: center;
+}
+
+input[type="search"] {
+    white-space: pre-wrap;
+    word-wrap: break-word
+}
+
+#class-chart {
+    height: 70px;
+    position: relative;
+    z-index: 1;
+
+}
+#first {
+    position: absolute;
+    z-index: 2;
 }
